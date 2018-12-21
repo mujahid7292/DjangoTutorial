@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Hello World</title>
+    </head>
+    <body>
+        <h1> Simple Website</h1>
+        <div>
+            <p>Name : {{ name }}</p>
+            <p>Country : {{ country }}</p>
+            <p>Age : {{ age }} </p>
+            <p> {% if age > 18 %}
+                <p> Entry : Alowed</p>
+                {% else %}
+                <p> Entry : Denied</p>
+                {% endif %}
+            </p>
+            <p>
+                {% for num in list %}
+                <h{{ num }}>Simple Head Line In h{{ num }} tag</h{{ num }}>
+                {% endfor %}
+            </p>
+        </div>
+    </body>
+</html>
